@@ -1,4 +1,3 @@
-import pickle
 import time
 import markdown
 from PyDictionary import PyDictionary
@@ -97,7 +96,6 @@ for i in range(len(lst)):
     else:
         lst[i] = Phrase(lst[i])
 lst.sort()
-pickle.dump(lst, open('data.dat', 'wb'))
 
 for i in range(len(lst)):
     print('now:', lst[i].content, type(lst[i]))
